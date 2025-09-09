@@ -11,7 +11,7 @@
 - XAMPP / MySQL with the imported database `dbsistema`
 
 ## Pasos rápidos
-1. Importa `psicologiamedens.sql` a tu phpMyAdmin (asegúrate que la BD se llame `dbsistema`).
+1. Importa `psicologiamedens.sql` a tu phpMyAdmin (asegúrate que la BD se llame `psicologia`).
 
 2. Backend:
 
@@ -31,7 +31,7 @@
    npm run dev
    ```
 
-4. Abre http://localhost:5500 (Vite) para acceder al frontend.
+4. Abre http://localhost:5173 (Vite) para acceder al frontend.
 
 
 ## Credenciales de prueba (según tu dump)
