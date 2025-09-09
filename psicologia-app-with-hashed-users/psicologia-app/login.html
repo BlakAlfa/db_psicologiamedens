@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MEDENS| PSICOLOGIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../public/css/font-awesome.css">
+
+  <style>
+    /* Fondo animado moderno */
+    body.login-page {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #033194, #4163d3, #4163d3, #4163d3);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Caja del login */
+    .login-box {
+  width: 100%;
+  max-width: 600px;        /* Aumenta el ancho del modal */
+  background: white;       /* Fondo blanco limpio */
+  padding: 40px 50px;      /* Espaciado interno generoso */
+  border-radius: 12px;     /* Bordes redondeados suaves */
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3); /* Sombra moderna */
+  transition: all 0.3s ease-in-out;       /* Suavidad en efectos */
+}
+
+.login-logo img {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.login-box-msg {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #4163d3;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form-group .fa {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  color: #aaa;
+}
+
+.form-control {
+  border-radius: 5px;
+  padding-right: 35px;
+  height: 45px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #4163d3;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 18px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #4163d3;
+}
+
+  </style>
+</head>
+
+<body class="login-page">
+  <div class="login-box">
+    <div class="login-logo text-center">
+      <img src="../img/logo.png" alt="Logo">
+    </div>
+    <p class="login-box-msg">Inicia sesión para continuar</p>
+    <form method="post" id="frmAcceso">
+      <div class="form-group has-feedback">
+        <input type="text" id="logina" name="logina" class="form-control" placeholder="Usuario" required>
+        <span class="fa fa-user form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" id="clavea" name="clavea" class="form-control" placeholder="Contraseña" required>
+        <span class="fa fa-key form-control-feedback"></span>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- JS Scripts -->
+  <script src="../public/js/jquery-3.1.1.min.js"></script>
+  <script src="../public/js/bootstrap.min.js"></script>
+  <script src="../public/js/bootbox.min.js"></script>
+  <script src="scripts/login.js"></script>
+  <script src="../public/js/funciones.js"></script>
+  
+</body>
+</html>
+ 
